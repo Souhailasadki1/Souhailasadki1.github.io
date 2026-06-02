@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Souhaila Sadki — Spécialiste Amazon Ads</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#EAEDED;color:#0F1111;font-size:14px}
+.nav{background:#131921;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{color:#FF9900;font-size:20px;font-weight:700}
+.nav a{color:#fff;text-decoration:none;font-size:13px}
+.nav a:hover{text-decoration:underline}
+.subnav{background:#232F3E;padding:8px 20px;display:flex;gap:20px;overflow-x:auto}
+.subnav a{color:#fff;text-decoration:none;font-size:13px;white-space:nowrap}
+.subnav a:hover{text-decoration:underline}
+.bread{background:#fff;padding:8px 20px;font-size:12px;color:#007185;border-bottom:1px solid #ddd}
+.main{max-width:1200px;margin:16px auto;padding:0 16px;display:grid;grid-template-columns:1fr 320px;gap:16px}
+.left{display:flex;flex-direction:column;gap:16px}
+.card{background:#fff;border:1px solid #ddd;border-radius:4px;padding:20px}
+.hero-top{display:flex;gap:20px;flex-wrap:wrap}
+.avatar{width:160px;height:180px;background:#131921;border-radius:4px;border:1px solid #ddd;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.avatar-initials{font-size:52px;font-weight:700;color:#FF9900}
+.avatar-name{font-size:11px;color:#aaa;margin-top:4px}
+.hero-info{flex:1;min-width:200px}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;margin-bottom:8px}
+.badge-red{background:#CC0C39;color:#fff}
+.badge-green{background:#067D62;color:#fff}
+h1{font-size:18px;font-weight:400;line-height:1.4;margin-bottom:8px}
+.brand{font-size:13px;color:#007185;margin-bottom:6px}
+.brand a{color:#007185;text-decoration:none}
+.stars{display:flex;align-items:center;gap:6px;margin-bottom:8px;color:#FF9900;font-size:15px}
+.stars span{color:#007185;font-size:13px}
+hr{border:none;border-top:1px solid #e7e7e7;margin:10px 0}
+.price-lbl{font-size:12px;color:#555}
+.price{font-size:22px;color:#B12704}
+.price-note{font-size:12px;color:#007600;margin-top:2px}
+ul.bullets{margin:12px 0;list-style:none}
+ul.bullets li{padding:3px 0 3px 14px;position:relative;font-size:13px;line-height:1.5}
+ul.bullets li::before{content:"›";position:absolute;left:0;font-weight:700}
+.stitle{font-size:18px;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #e7e7e7}
+table.specs{width:100%;border-collapse:collapse;font-size:13px}
+table.specs tr:nth-child(odd){background:#F7F7F7}
+table.specs td{padding:8px 12px;vertical-align:top}
+table.specs td:first-child{font-weight:700;width:36%;color:#333}
+table.specs td:last-child{color:#555}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.acard{background:#F7F7F7;border:1px solid #ddd;border-radius:4px;padding:14px}
+.aicon{font-size:22px;margin-bottom:6px}
+.atitle{font-size:13px;font-weight:700;color:#C7511F;margin-bottom:6px}
+.atext{font-size:12px;color:#555;line-height:1.5}
+.qa-item{border-bottom:1px solid #e7e7e7;padding:18px 0}
+.qa-item:last-child{border-bottom:none;padding-bottom:0}
+.qa-q{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start}
+.qa-r{display:flex;gap:10px;align-items:flex-start}
+.qbadge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;flex-shrink:0;margin-top:1px}
+.qbadge.q{background:#FF9900;color:#131921}
+.qbadge.r{background:#067D62;color:#fff}
+.qtxt{font-size:14px;font-weight:700;color:#0F1111;line-height:1.4}
+.rtxt{font-size:13px;color:#333;line-height:1.7}
+.rtxt strong{color:#0F1111}
+.tag{display:inline-block;background:#FFF3E0;border:1px solid #FFB74D;color:#E65100;font-size:10px;padding:2px 6px;border-radius:3px;margin:2px 2px 2px 0;font-weight:700}
+.rev-wrap{display:flex;gap:20px;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e7e7e7}
+.rev-score{text-align:center}
+.rev-score .big{font-size:48px;line-height:1}
+.rev-score .star{color:#FF9900;font-size:16px}
+.rev-bars{flex:1}
+.rbar-row{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:12px;color:#007185}
+.rbar{flex:1;height:12px;background:#ddd;border-radius:2px;overflow:hidden}
+.rbar-fill{height:100%;background:#FF9900;border-radius:2px}
+.rev-item{border-bottom:1px solid #e7e7e7;padding:16px 0}
+.rev-item:last-child{border-bottom:none}
+.rev-who{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.av{width:36px;height:36px;border-radius:50%;background:#FF9900;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0}
+.rev-name{font-size:13px;font-weight:700}
+.verified{color:#C45500;font-size:12px}
+.rev-stars{color:#FF9900;font-size:14px;margin-bottom:4px}
+.rev-title{font-size:14px;font-weight:700;margin-bottom:6px}
+.rev-text{font-size:13px;color:#333;line-height:1.5}
+.rev-date{font-size:12px;color:#888;margin-top:4px}
+.buybox{background:#fff;border:1px solid #ddd;border-radius:8px;padding:18px;height:fit-content;position:sticky;top:16px}
+.bprice{font-size:26px;color:#B12704;margin-bottom:4px}
+.bgreen{font-size:13px;color:#007600;margin-bottom:4px}
+.bloc{font-size:13px;color:#007185;margin-bottom:12px}
+.bstock{color:#007600;font-size:15px;font-weight:700;margin-bottom:12px}
+.btn{display:block;width:100%;padding:10px;border:none;border-radius:20px;font-size:13px;cursor:pointer;text-align:center;margin-bottom:8px;text-decoration:none}
+.btn-y{background:#FFD814;color:#0F1111;border:1px solid #FFC200}
+.btn-o{background:#FF9900;color:#0F1111;border:1px solid #FF8C00}
+.btn-w{background:#fff;color:#0F1111;border:1px solid #d5d9d9}
+.bdiv{border-top:1px solid #e7e7e7;margin:12px 0}
+.brow{display:flex;justify-content:space-between;font-size:12px;margin:5px 0}
+.brow strong{color:#0F1111}
+.brow span{color:#555;text-align:right;max-width:55%}
+.cbadge{display:inline-block;background:#E8F4FD;border:1px solid #B0D4EC;color:#007185;font-size:10px;padding:3px 8px;border-radius:3px;font-weight:700;margin:2px}
+.banner{background:#131921;color:#fff;padding:24px;border-radius:4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.banner h2{font-size:20px;color:#FF9900;margin-bottom:8px}
+.banner p{font-size:13px;color:#ccc;line-height:1.6}
+.blinks{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.blinks a{color:#FF9900;text-decoration:none;font-size:13px}
+.stats{text-align:right}
+.stat{font-size:32px;font-weight:700;color:#FF9900}
+.stat-lbl{font-size:12px;color:#ccc}
+footer{background:#131921;color:#aaa;text-align:center;padding:20px;margin-top:16px;font-size:12px}
+footer a{color:#FF9900;text-decoration:none}
+@media(max-width:768px){
+  .main{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr 1fr}
+  .hero-top{flex-direction:column}
+  .avatar{width:100%;height:120px}
+  .banner{flex-direction:column}
+  .stats{text-align:left}
+}
+@media(max-width:480px){.grid3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="logo">SouhailaSadki</div>
+  <a href="https://www.linkedin.com/in/souhaila-sadki/" target="_blank">LinkedIn</a>
+  <a href="https://messy-point-83f.notion.site/Mon-Portfolio-2c94521013af806c868eeab15702f529" target="_blank">Portfolio</a>
+  <a href="mailto:souhailasadki@outlook.fr">Contact</a>
+</div>
+<div class="subnav">
+  <a href="#about">À propos</a>
+  <a href="#qa">Questions Wilift</a>
+  <a href="#specs">Fiche technique</a>
+  <a href="#projects">Projets</a>
+  <a href="#reviews">Références</a>
+</div>
+<div class="bread">Candidatures › Agences Amazon › Account Manager › <span>Souhaila Sadki</span></div>
+
+<div class="main">
+<div class="left">
+
+  <!-- HERO -->
+  <div class="card" id="about">
+    <div class="hero-top">
+      <div class="avatar">
+        <div class="avatar-initials">SS</div>
+        <div class="avatar-name">Souhaila Sadki</div>
+      </div>
+      <div class="hero-info">
+        <span class="badge badge-red">Amazon Verified Candidate</span>
+        <span class="badge badge-green" style="margin-left:6px">Vendor + Seller</span>
+        <h1>Souhaila Sadki — Spécialiste Amazon Ads &amp; Marketplaces | Double vision Vendor &amp; Seller | A+ Content | ACOS / ROAS / TACOS | Paris 🇫🇷</h1>
+        <div class="brand">Marque : <a href="https://www.linkedin.com/in/souhaila-sadki/" target="_blank">ICN Business School</a> &nbsp;|&nbsp; Postuler chez : <a href="mailto:souhailasadki@outlook.fr">Wilift ↗</a></div>
+        <div class="stars">★★★★★ <span>4,94 / 5 · 70 réservations/mois (Airbnb)</span></div>
+        <hr>
+        <div class="price-lbl">Prétentions salariales :</div>
+        <div class="price">€39 000 – 42 000 <span style="font-size:14px;color:#555">/ an brut</span></div>
+        <div class="price-note">✓ Ouverte à une part variable liée à la performance des comptes</div>
+        <hr>
+        <ul class="bullets">
+          <li><strong>Double vision Vendor &amp; Seller Central</strong> — 2 ans chez Kohler France, opérationnel de l'intérieur</li>
+          <li><strong>Amazon Ads certifiée</strong> — Sponsored Products/Brands/Display, DSP, ACOS/ROAS/TACOS, keyword harvesting, bid optimization</li>
+          <li><strong>Seller Central maîtrisé</strong> — migration ASINs, Brand Registry, Account Health, IPI score, FBM/FBA mix, conformité listings</li>
+          <li><strong>Brand Analytics &amp; AMC</strong> — Search Frequency Rank, Conversion Share, glance views, Search Query Performance</li>
+          <li><strong>AI-first au quotidien</strong> — Claude, ChatGPT, Copilot pour scale et efficacité opérationnelle</li>
+          <li><strong>Trilingue FR / EN / AR</strong> — disponible Paris 13e · hybride · juillet 2026</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q&A WILIFT -->
+  <div class="card" id="qa">
+    <div class="stitle">🎯 Réponses aux questions Wilift</div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q1</span><span class="qtxt">Peux-tu nous parler de ton expérience au sein d'une agence web ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">Chez <strong>Marketing Solutions à Casablanca</strong>, j'ai géré plusieurs clients en parallèle — campagnes digitales, gestion de contenu, reporting de performance, relation client B2B. Ce que j'en retiens surtout : s'adapter vite à des univers de marque différents et structurer des recommandations claires selon l'interlocuteur. La logique multi-clients, les délais serrés, la capacité à recommander puis livrer — c'est exactement ce que je veux retrouver chez Wilift, cette fois 100% centré sur Amazon.</div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q2</span><span class="qtxt">Peux-tu nous parler de ton expérience avec le Seller Central d'Amazon ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">
+        Mon expérience Amazon a démarré sur <strong>Vendor Central chez Kohler France</strong>. Au quotidien : structuration du catalogue avec les <strong>variation families parent/child</strong>, optimisation des <strong>attributs backend et search terms</strong>, construction du <strong>A+ Content modulaire</strong>, <strong>Brand Story</strong> et <strong>Brand Store multi-pages</strong>. J'ai aussi géré les aspects essentiels : <strong>chargebacks</strong>, <strong>shortage claims</strong>, suppressions de <strong>Buy Box</strong>, suivi du <strong>POs acceptance rate</strong> et coordination avec le <strong>Vendor Manager</strong>.<br><br>
+        En parallèle, j'ai accompagné la <strong>transition vers Seller Central</strong> : migration des <strong>ASINs</strong>, mise en place du <strong>Brand Registry</strong>, contrôle de conformité (<strong>Hazmat</strong>, restricted products), paramétrage du <strong>FBM/FBA mix</strong>, suivi de l'<strong>Account Health</strong> et de l'<strong>IPI score</strong>.<br><br>
+        Côté <strong>Amazon Ads</strong> : <strong>Sponsored Products</strong> (manual &amp; auto, keyword harvesting, bid optimization), <strong>Sponsored Brands</strong> (Brand Video, Store Spotlight), <strong>Sponsored Display</strong> et <strong>DSP</strong> en remarketing. Je suis quotidiennement l'<strong>ACOS, ROAS, TACOS</strong> et le <strong>TOS impression share</strong>.<br><br>
+        Pour l'analyse : <strong>Brand Analytics</strong>, <strong>Search Query Performance</strong> et <strong>Amazon Marketing Cloud (AMC)</strong> — Search Frequency Rank, Conversion Share, glance views, unit session percentage et repeat customer rate.<br><br>
+        <span class="tag">Vendor Central</span><span class="tag">Seller Central</span><span class="tag">A+ Content</span><span class="tag">Brand Store</span><span class="tag">Brand Registry</span><span class="tag">Sponsored Ads</span><span class="tag">DSP</span><span class="tag">ACOS/ROAS/TACOS</span><span class="tag">Brand Analytics</span><span class="tag">AMC</span><span class="tag">FBM/FBA</span><span class="tag">Account Health</span><span class="tag">IPI score</span><span class="tag">Chargebacks</span>
+      </div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q3</span><span class="qtxt">La ville où tu habites ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">Paris — à quelques minutes du 13e. 📍</div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q4</span><span class="qtxt">Tes prétentions salariales annuelles brutes ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">Entre <strong>39 000 € et 42 000 € bruts / an</strong>. Ouverte à discuter si une part variable liée à la performance des comptes est prévue — ce qui ferait tout son sens dans un modèle agence à la performance comme le vôtre.</div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q5</span><span class="qtxt">Quand serais-tu disponible pour commencer notre collaboration ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt"><strong>Juillet 2026</strong>, fin de mon Master Grande École à l'ICN Business School. Disponible pour avancer sur le process dès maintenant.</div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q6</span><span class="qtxt">Es-tu ouverte à du télétravail / hybride ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">Oui, hybride me convient parfaitement. J'apprécie la flexibilité pour les phases de production, mais je crois vraiment à la valeur d'être au bureau — surtout en début de collaboration pour bien calibrer avec l'équipe.</div></div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="qbadge q">Q7</span><span class="qtxt">En 10 lignes max, ce qui te motive à rejoindre l'aventure Wilift ?</span></div>
+      <div class="qa-r"><span class="qbadge r">R</span><div class="rtxt">Ce qui me plaît chez Wilift, c'est que vous êtes partis de zéro avec <strong>Pierrot</strong> — une marque premium Made in France propulsée jusqu'à <strong>2M€ et 10 pays en 2 ans</strong>. Vous ne conseillez pas à partir d'une théorie, vous conseillez à partir de ce que vous avez vous-mêmes réussi.<br><br>J'ai une <strong>double vision Vendor &amp; Seller</strong>, je pilote des campagnes Ads au quotidien et j'analyse les vrais leviers de croissance — <strong>ROAS, Buy Box, Conversion Share, Search Frequency Rank</strong>. Ce que je veux maintenant, c'est appliquer tout ça sur un <strong>portefeuille de 45 marques</strong> différentes, dans une équipe de 7 personnes où chaque décision a un impact direct. Voilà pourquoi Wilift.</div></div>
+    </div>
+
+  </div>
+
+  <!-- SPECS -->
+  <div class="card" id="specs">
+    <div class="stitle">Fiche technique</div>
+    <table class="specs">
+      <tr><td>Disponibilité</td><td>Juillet 2026 — process possible dès maintenant</td></tr>
+      <tr><td>Localisation</td><td>Paris (75) · proche Paris 13e</td></tr>
+      <tr><td>Mode de travail</td><td>Hybride (présence bureau selon les besoins)</td></tr>
+      <tr><td>Expérience Amazon</td><td>2 ans — Vendor Central + Seller Central (Kohler France)</td></tr>
+      <tr><td>Amazon Ads</td><td>Sponsored Products (manual/auto), Sponsored Brands, Sponsored Display, Amazon DSP</td></tr>
+      <tr><td>KPIs maîtrisés</td><td>ACOS, ROAS, TACOS, TOS impression share, Buy Box %, CVR, sessions, glance views</td></tr>
+      <tr><td>Outils Analytics</td><td>Brand Analytics, Search Query Performance, Amazon Marketing Cloud (AMC)</td></tr>
+      <tr><td>Vendor</td><td>Chargebacks, shortage claims, POs acceptance rate, co-op, Vendor Manager</td></tr>
+      <tr><td>Seller</td><td>Brand Registry, FBM/FBA mix, Account Health, IPI score, voice of the customer</td></tr>
+      <tr><td>Outils BI</td><td>Power BI (PL-300), Google Analytics/GA4, SQL, Search Console, Tag Manager</td></tr>
+      <tr><td>CMS e-commerce</td><td>Shopify (2 boutiques lancées), Prestashop, PIM, SAP</td></tr>
+      <tr><td>Langues</td><td>Français (natif) · Anglais (C1) · Arabe (natif)</td></tr>
+      <tr><td>Formation</td><td>Bac+5 — Master Grande École, ICN Business School (2024–2026)</td></tr>
+      <tr><td>Prétentions</td><td>39 000 € – 42 000 € bruts/an · Variable à la perf bienvenu</td></tr>
+    </table>
+  </div>
+
+  <!-- PROJETS -->
+  <div class="card" id="projects">
+    <div class="stitle">Contenu A+ — Projets &amp; réalisations</div>
+    <div class="grid3">
+      <div class="acard"><div class="aicon">📊</div><div class="atitle">Dashboard Power BI Kohler</div><div class="atext">Centralisation des prix, ventes et données marketing par produit et par marketplace. Automatisation du reporting via SQL + Power BI.</div></div>
+      <div class="acard"><div class="aicon">🛍️</div><div class="atitle">Boutique Shopify Kohler interne</div><div class="atext">Lancement complet : back-office, catalogue, fiches produits (titres SEO, descriptions, visuels, attributs), paramétrage des collections.</div></div>
+      <div class="acard"><div class="aicon">💄</div><div class="atitle">Boutique cosmétique Shopify</div><div class="atext">Projet personnel : identité visuelle, back-office, création et mise à jour des fiches produits, stratégie d'animation commerciale.</div></div>
+      <div class="acard"><div class="aicon">🏷️</div><div class="atitle">Brand Store &amp; A+ Content</div><div class="atext">Brand Stores multi-pages, Brand Story et modules A+ Content pour Kohler France sur Amazon Vendor Central.</div></div>
+      <div class="acard"><div class="aicon">🌍</div><div class="atitle">Expansion EU &amp; MENA</div><div class="atext">Stage Chef de Produit Marketing chez Kohler Casablanca : lancement de gammes sur plusieurs marchés européens et MENA.</div></div>
+      <div class="acard"><div class="aicon">✈️</div><div class="atitle">Airbnb Ops Manager</div><div class="atext">4 ans en freelance : 70 réservations/mois, note 4,94/5, encadrement d'une équipe de 4, A/B testing et optimisation des KPIs.</div></div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="card" id="reviews">
+    <div class="stitle">Avis vérifiés — Références</div>
+    <div class="rev-wrap">
+      <div class="rev-score"><div class="big">4.9</div><div class="star">★★★★★</div><div style="font-size:12px;color:#555">sur 5</div></div>
+      <div class="rev-bars">
+        <div class="rbar-row"><span>5 étoiles</span><div class="rbar"><div class="rbar-fill" style="width:90%"></div></div><span>90%</span></div>
+        <div class="rbar-row"><span>4 étoiles</span><div class="rbar"><div class="rbar-fill" style="width:8%"></div></div><span>8%</span></div>
+        <div class="rbar-row"><span>3 étoiles</span><div class="rbar"><div class="rbar-fill" style="width:2%"></div></div><span>2%</span></div>
+        <div class="rbar-row"><span>2 étoiles</span><div class="rbar"><div class="rbar-fill" style="width:0%"></div></div><span>0%</span></div>
+        <div class="rbar-row"><span>1 étoile</span><div class="rbar"><div class="rbar-fill" style="width:0%"></div></div><span>0%</span></div>
+      </div>
+    </div>
+    <div class="rev-item">
+      <div class="rev-who"><div class="av">KF</div><div><div class="rev-name">Kohler France</div><div class="verified">✓ Collaboration vérifiée · Paris, France</div></div></div>
+      <div class="rev-stars">★★★★★</div>
+      <div class="rev-title">Double expertise Vendor &amp; Seller, prise en main immédiate</div>
+      <div class="rev-text">Souhaila gère l'ensemble de notre présence Amazon avec rigueur : catalogue, A+ Content, Brand Store, campagnes Ads et analyse des KPIs au quotidien. Proactive, autonome, elle a accompagné la transition Vendor → Seller avec méthode et sérieux.</div>
+      <div class="rev-date">Octobre 2024 – aujourd'hui</div>
+    </div>
+    <div class="rev-item">
+      <div class="rev-who"><div class="av">AB</div><div><div class="rev-name">Airbnb Marketplace</div><div class="verified">✓ Performance vérifiée · Remote</div></div></div>
+      <div class="rev-stars">★★★★★</div>
+      <div class="rev-title">4,94/5 · 70 réservations/mois · Encadrement équipe de 4</div>
+      <div class="rev-text">Gestion end-to-end d'un compte marketplace depuis 4 ans : optimisation des listings, A/B testing, pilotage des KPIs, coordination d'une équipe. Résultats constants et mesurables dans le temps.</div>
+      <div class="rev-date">Mars 2022 – aujourd'hui</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BUY BOX -->
+<div class="buybox" id="contact">
+  <div class="bprice">€39 000 – 42 000</div>
+  <div style="font-size:12px;color:#555;margin-bottom:8px">bruts / an · variable à la perf bienvenu</div>
+  <div class="bgreen">✓ Disponible : juillet 2026</div>
+  <div class="bgreen">✓ Process possible dès maintenant</div>
+  <div class="bloc">📍 Paris (75) · proche Paris 13e</div>
+  <div class="bstock">En stock — 1 profil disponible</div>
+  <a href="mailto:souhailasadki@outlook.fr" class="btn btn-y">📧 Contacter maintenant</a>
+  <a href="https://www.linkedin.com/in/souhaila-sadki/" target="_blank" class="btn btn-o">💼 Voir le LinkedIn</a>
+  <a href="https://messy-point-83f.notion.site/Mon-Portfolio-2c94521013af806c868eeab15702f529" target="_blank" class="btn btn-w">🗂️ Portfolio complet</a>
+  <div class="bdiv"></div>
+  <div class="brow"><strong>Ville</strong><span>Paris (75)</span></div>
+  <div class="brow"><strong>Mode</strong><span>Hybride</span></div>
+  <div class="brow"><strong>Dispo</strong><span>Juillet 2026</span></div>
+  <div class="brow"><strong>Amazon</strong><span>Vendor + Seller</span></div>
+  <div class="brow"><strong>Expérience</strong><span>4+ ans e-commerce</span></div>
+  <div class="brow"><strong>Formation</strong><span>Bac+5 ICN</span></div>
+  <div class="brow"><strong>Langues</strong><span>FR · EN · AR</span></div>
+  <div class="bdiv"></div>
+  <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:#333">Certifications</div>
+  <div>
+    <span class="cbadge">Amazon Ads</span><span class="cbadge">Amazon DSP</span><span class="cbadge">PL-300 Power BI</span><span class="cbadge">GA4</span><span class="cbadge">PSPO I</span><span class="cbadge">HubSpot</span>
+  </div>
+  <div class="bdiv"></div>
+  <div style="font-size:12px;color:#555;line-height:1.8">
+    📧 <a href="mailto:souhailasadki@outlook.fr" style="color:#007185">souhailasadki@outlook.fr</a><br>
+    📱 <a href="tel:+33665511900" style="color:#007185">+33 6 65 51 19 00</a><br>
+    💼 <a href="https://www.linkedin.com/in/souhaila-sadki/" target="_blank" style="color:#007185">LinkedIn</a> &nbsp;·&nbsp;
+    <a href="https://messy-point-83f.notion.site/Mon-Portfolio-2c94521013af806c868eeab15702f529" target="_blank" style="color:#007185">Portfolio</a>
+  </div>
+</div>
+</div>
+
+<!-- BRAND BANNER -->
+<div style="max-width:1200px;margin:0 auto 16px;padding:0 16px">
+  <div class="banner">
+    <div>
+      <h2>Brand Store — Souhaila Sadki</h2>
+      <p>Spécialiste Amazon Ads &amp; Marketplaces · Double vision Vendor &amp; Seller<br>Bac+5 ICN Business School · Paris · Trilingue FR/EN/AR</p>
+      <div class="blinks">
+        <a href="mailto:souhailasadki@outlook.fr">📧 souhailasadki@outlook.fr</a>
+        <a href="tel:+33665511900">📱 +33 6 65 51 19 00</a>
+        <a href="https://www.linkedin.com/in/souhaila-sadki/" target="_blank">💼 LinkedIn</a>
+        <a href="https://messy-point-83f.notion.site/Mon-Portfolio-2c94521013af806c868eeab15702f529" target="_blank">🗂️ Portfolio</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat">4,94/5</div><div class="stat-lbl">Note · 70 réservations/mois</div>
+      <div class="stat" style="margin-top:10px">4+</div><div class="stat-lbl">ans e-commerce &amp; marketplaces</div>
+      <div class="stat" style="margin-top:10px">5</div><div class="stat-lbl">certifications digitales</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Souhaila Sadki · Candidate Amazon Ads &amp; Marketplaces · Paris · <a href="mailto:souhailasadki@outlook.fr">souhailasadki@outlook.fr</a></p>
+  <p style="margin-top:6px;font-size:11px;color:#666">Candidature créative pour <a href="https://wilift.fr" target="_blank">Wilift</a></p>
+</footer>
+
+</body>
+</html>
